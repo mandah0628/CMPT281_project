@@ -6,9 +6,9 @@ body, ul, li {
     box-sizing: border-box;
 }
 
-/* Navbar Styling */
+/* Navbar */
 .navbar {
-    background-color: #e6b1b8;
+    background-color: #da8691;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -25,7 +25,6 @@ body, ul, li {
     padding: 10px 20px;
 }
 
-/* Logo Styling */
 .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -33,7 +32,6 @@ body, ul, li {
     text-decoration: none;
 }
 
-/* Navigation Links Styling */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -53,7 +51,6 @@ body, ul, li {
     border-radius: 5px;
 }
 
-/* Cart Count Styling */
 .cart {
     position: relative;
 }
@@ -69,34 +66,27 @@ body, ul, li {
     font-size: 0.8em;
 }
 
-/* Carousel Container */
+/* Carousel */
 .carousel {
-    height: 1235px;
-    width: 100%; /* Fills the entire available width */
-    overflow: hidden; /* Hides images outside the visible area */
-    
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Images Wrapper */
-  .carousel-images {
+}
+
+.carousel-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
-  }
-  
-  /* Individual Images */
-  .carousel-images img {
-    width: 100%; /* Each image spans the full width of the carousel container */
-    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
     transform: translateY(-5%);
-    flex-shrink: 0; /* Prevents images from shrinking */
-  }
-  
-  
-  
-  
-  /* Navigation Buttons */
-  .carousel-btn {
+}
+
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -108,80 +98,78 @@ body, ul, li {
     padding: 10px;
     font-size: 18px;
     z-index: 10;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
-  
-  .carousel-btn:hover {
+}
+
+.carousel-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
-  }
+}
 
+.prev-btn {
+    left: 10px;
+}
 
-  .featured-products {
+.next-btn {
+    right: 10px;
+}
+
+/* Featured Products */
+.featured-products {
     padding: 40px 20px;
     text-align: center;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
-  }
-  
-  /* Grid Layout for Products */
-  .product-grid {
+}
+
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* Individual Product Card */
-  .product {
+}
+
+.product {
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
-  
-  .product img {
+}
+
+.product img {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
-  
-  .product-info {
+}
+
+.product-info {
     padding: 20px;
     text-align: left;
-  }
-  
-  .product-info h3 {
+}
+
+.product-info h3 {
     font-size: 1.25rem;
     margin-bottom: 10px;
-  }
-  
-  .product-info p {
+}
+
+.product-info p {
     font-size: 0.9rem;
     margin-bottom: 20px;
     color: #666;
-  }
-  
-  .product-buttons {
+}
+
+.product-buttons {
     display: flex;
     gap: 10px;
-  }
-  
-  .product-buttons button {
+}
+
+.product-buttons button {
     flex: 1;
     padding: 10px;
     font-size: 0.9rem;
@@ -191,8 +179,83 @@ body, ul, li {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .product-buttons button:hover {
+}
+
+.product-buttons button:hover {
     background-color: #e64a19;
-  }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #da8691;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    text-align: left;
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 5px;
+}
+
+.footer ul, .footer form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ff5722;
+}
+
+.footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer form input {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer form button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer form button:hover {
+    background-color: #e64a19;
+}
