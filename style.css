@@ -68,7 +68,7 @@ body, ul, li {
 
 /* Carousel */
 .carousel {
-    height: 600px;
+    height: 1235px; /* Original height restored */
     width: 100%;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -80,12 +80,13 @@ body, ul, li {
 }
 
 .carousel-images img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Fill the width of the container */
+    height: 100%; /* Ensure the image fills the height of the carousel */
+    object-fit: cover; /* Maintain full visibility */
     flex-shrink: 0;
-    transform: translateY(-5%);
 }
 
+/* Navigation Buttons */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -116,6 +117,8 @@ body, ul, li {
 .featured-products {
     padding: 40px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-title {
@@ -127,19 +130,36 @@ body, ul, li {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 20px; /* Space between rows */
+    max-width: auto;
     margin: 0 auto;
 }
 
 .product {
     display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
     overflow: hidden;
+    padding: 50px;
+}
+
+#product-2 {
+    flex-direction: row-reverse; /* Reverse the order of children */
+}
+
+#product-1 :hover{
+    background-color: rgb(196, 136, 68);
+    transition: background-color 0.3s ease;
+}
+
+#product-2 :hover {
+    background-color: rgb(253, 255, 151);
+    transition: background-color 0.3s ease;
+}
+
+#product-3 :hover{
+    background-color: rgb(252, 164, 215);
+    transition: background-color 0.3s ease;
 }
 
 .product img {
@@ -150,66 +170,34 @@ body, ul, li {
 
 .product-info {
     padding: 20px;
-    text-align: left;
+    display: grid;
 }
 
 .product-info h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
+    font-size: 50px;
 }
 
 .product-info p {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    color: #666;
-}
-
-.product-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.product-buttons button {
-    flex: 1;
-    padding: 10px;
-    font-size: 0.9rem;
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.product-buttons button:hover {
-    background-color: #e64a19;
+    font-size: 20px;
 }
 
 /* Footer */
-.footer {
+.footer-container {
     width: 100%;
+    height: 300px;
     background-color: #da8691;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
-.footer section {
-    flex: 1;
-    min-width: 200px;
-    padding: 10px;
-    text-align: left;
-}
+
 
 .footer h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #333;
-    border-bottom: 2px solid #ff5722;
-    padding-bottom: 5px;
+    
 }
 
 .footer ul, .footer form {
@@ -224,13 +212,9 @@ body, ul, li {
 
 .footer ul li a {
     color: #333;
-    text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer ul li a:hover {
-    color: #ff5722;
-}
 
 .footer form {
     display: flex;
@@ -254,6 +238,7 @@ body, ul, li {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    max-width: 300px;
 }
 
 .footer form button:hover {
