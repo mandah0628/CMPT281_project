@@ -24,7 +24,35 @@
         </nav>
 
         <div class="form-container">
+            <div class="contact-name">
+                <form class="name-form">
+                    <div class="contact-first-name"></div>
+                        <label for="first-name">First name:</label>
+                        <br>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    
+                    <div class="contact-last-name">
+                        <label for="last-name">Last name:</label>
+                        <br>
+                        <input type="text" id="last-name" name="last-name"> 
+                    </div>
 
+                    <label for="contact-email">E-mail address:</label>
+                    <br>
+                    <input type="email" id="contact-email" name="contact-email">
+                    <br>
+
+                    <label for="phone-number">Phone number:</label>
+                    <br>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <br>
+
+                    <label for="company-name">Company name:</label>
+                    <br>
+                    <input type="text" id="company-name" name="company-name">
+                </form>
+            </div>
         </div>
     </body>
 
