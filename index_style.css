@@ -1,6 +1,5 @@
-/* Carousel */
 .carousel {
-    height: 1235px; /* Original height restored */
+    height: 1235px; 
     width: 100%;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -12,13 +11,12 @@
 }
 
 .carousel-images img {
-    width: 100%; /* Fill the width of the container */
-    height: 100%; /* Ensure the image fills the height of the carousel */
-    object-fit: cover; /* Maintain full visibility */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     flex-shrink: 0;
 }
 
-/* Navigation Buttons */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -45,7 +43,6 @@
     right: 10px;
 }
 
-/* Featured Products */
 .featured-products {
     padding: 40px 20px;
     text-align: center;
@@ -62,8 +59,8 @@
 
 .product-grid {
     display: grid;
-    grid-template-columns: 1fr; /* One column layout */
-    gap: 20px; /* Space between rows */
+    grid-template-columns: 1fr; 
+    gap: 20px; 
     max-width: auto;
     margin: 0 auto;
 }
@@ -76,7 +73,7 @@
 }
 
 #product-2 {
-    flex-direction: row-reverse; /* Reverse the order of children */
+    flex-direction: row-reverse; 
 }
 
 #product-1 :hover{

@@ -1,21 +1,16 @@
-/* Styling specific to the Order page */
-
-/* Order Page Main Section */
-.order-main {
+.menu-container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 10px;
     text-align: center;
 }
 
-/* Section Headers */
-.order-section h2 {
+.menu-section h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #333;
 }
 
-/* Product Grid */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -23,7 +18,6 @@
     margin-bottom: 30px;
 }
 
-/* Product Card */
 .product-card {
     background-color: #f9f9f9;
     padding: 15px;

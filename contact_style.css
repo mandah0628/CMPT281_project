@@ -1,8 +1,128 @@
-form-container{
-    color: aqua;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+/* General Form Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
+
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-container input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+    outline: none;
+}
+
+/* First and Last Name Styling */
+.contact-name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contact-name .contact-first-name,
+.contact-name .contact-last-name {
+    flex: 1;
+}
+
+.contact-name input {
+    width: 95%; /* Adjust for proper spacing */
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+
+/* Styling for the textarea (message field) */
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: none; /* Prevent resizing */
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+    outline: none;
+}
+
+/* Adjust spacing for the message field */
+label[for="user-message"] {
+    margin-top: 20px; /* Add space above the message label */
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-name {
+        flex-direction: column;
+    }
+
+    .contact-name input {
+        width: 100%;
+    }
+}
+
+
