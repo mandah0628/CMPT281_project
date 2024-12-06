@@ -1,8 +1,8 @@
 // carousel variables
 const carouselImages = document.querySelector('.carousel-images');
 const images = document.querySelectorAll('.carousel-images img');
-const prevButton = document.querySelector('.prev-btn'); // Corrected class name
-const nextButton = document.querySelector('.next-btn'); // Corrected class name
+const prevButton = document.querySelector('.prev-btn'); 
+const nextButton = document.querySelector('.next-btn'); 
 
 let index = 0;
 
@@ -51,15 +51,17 @@ if (carouselImages)
 
 // cart count variables
 const cart = []; 
-const cartCounter = document.querySelector('.cart-count'); // Cart count in the navbar
+const cartCounter = document.querySelector('.cart-count'); 
 
-// function the update the cart count
+/* function the update the cart count
+*/
 function updateCartCount() 
 {
     cartCounter.textContent = cart.length; 
 }
 
-// function that adds the chosen product in the cart
+/* Function that adds the chosen product in the cart
+*/
 function addToCart(productName, productPrice) 
 {
     cart.push({ name: productName, price: productPrice }); 

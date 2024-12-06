@@ -76,17 +76,17 @@
     flex-direction: row-reverse; 
 }
 
-#product-1 :hover{
+#product-1:hover {
     background-color: rgb(196, 136, 68);
     transition: background-color 0.3s ease;
 }
 
-#product-2 :hover {
+#product-2:hover {
     background-color: rgb(253, 255, 151);
     transition: background-color 0.3s ease;
 }
 
-#product-3 :hover{
+#product-3:hover {
     background-color: rgb(252, 164, 215);
     transition: background-color 0.3s ease;
 }

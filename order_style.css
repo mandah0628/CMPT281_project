@@ -60,7 +60,7 @@ button.submit-btn {
     display: block;
     margin: 20px 0;
     padding: 10px 20px;
-    background-color: #ff5722;
+    background-color: #da8691;
     color: white;
     border: none;
     border-radius: 5px;
@@ -69,5 +69,5 @@ button.submit-btn {
 }
 
 button.submit-btn:hover {
-    background-color: #e64a19;
+    background-color: #cc7f8c;
 }
