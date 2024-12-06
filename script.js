@@ -1,64 +1,67 @@
-// Carousel functionality (if needed)
+// carousel variables
 const carouselImages = document.querySelector('.carousel-images');
 const images = document.querySelectorAll('.carousel-images img');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+const prevButton = document.querySelector('.prev-btn'); // Corrected class name
+const nextButton = document.querySelector('.next-btn'); // Corrected class name
 
-let currentIndex = 0;
+let index = 0;
 
-// Function to update carousel position
-function updateCarousel() {
-  if (carouselImages) {
-    carouselImages.style.transform = `translateX(${-currentIndex * 100}%)`;
+/* Function for the carousel, changes the photo every 5 seconds
+*/
+function updateCarousel() 
+{
+  if (carouselImages) 
+  {
+    carouselImages.style.transform = 'translateX(' + (-index * 100) + '%)';
   }
 }
 
-// Next Button Functionality
-if (nextBtn) {
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
+// next button functionality, if user wants to
+// see the next image manually
+if (nextButton) 
+{
+  nextButton.addEventListener('click', function () {
+    index = (index + 1) % images.length;
     updateCarousel();
   });
 }
 
-// Previous Button Functionality
-if (prevBtn) {
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
+// previuos button functionality, if user wants to
+// see the previous image manually
+if (prevButton) 
+{
+  prevButton.addEventListener('click', function () {
+    index = (index - 1 + images.length) % images.length;
     updateCarousel();
   });
 }
 
-// Auto Slide every 5 seconds
-if (carouselImages) {
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % images.length;
+// auto slide
+if (carouselImages) 
+{
+  setInterval(function () {
+    index = (index + 1) % images.length;
     updateCarousel();
   }, 5000);
 }
 
-// Cart functionality
-const cart = []; // Array to store products in the cart
-const cartCount = document.querySelector('.cart-count'); // Cart count in the navbar
 
-// Function to update the cart count
-function updateCartCount() {
-  cartCount.textContent = cart.length; // Update the count with the number of items in the cart
+
+
+
+// cart count variables
+const cart = []; 
+const cartCounter = document.querySelector('.cart-count'); // Cart count in the navbar
+
+// function the update the cart count
+function updateCartCount() 
+{
+    cartCounter.textContent = cart.length; 
 }
 
-// Function to add a product to the cart
-function addToCart(productName, productPrice) {
-  cart.push({ name: productName, price: productPrice }); // Add product details to the cart array
-  updateCartCount(); // Update the cart count in the navbar
+// function that adds the chosen product in the cart
+function addToCart(productName, productPrice) 
+{
+    cart.push({ name: productName, price: productPrice }); 
+    updateCartCount(); 
 }
-
-// Add click event listeners to all product cards
-const productCards = document.querySelectorAll('.product-card');
-productCards.forEach((card) => {
-  card.addEventListener('click', () => {
-    const productName = card.getAttribute('data-name'); // Get product name from the card
-    const productPrice = card.getAttribute('data-price'); // Get product price from the card
-    addToCart(productName, productPrice); // Add the product to the cart
-    alert(`Added "${productName}" to the cart.`); // Notify the user
-  });
-});

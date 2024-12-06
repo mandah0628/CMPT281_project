@@ -1,11 +1,9 @@
-/* General Styling for Place Order Page */
 .place-order-main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
 }
 
-/* Section Styling */
 .cart-items, .client-info {
     margin-bottom: 30px;
 }
@@ -16,7 +14,6 @@ h2 {
     color: #333;
 }
 
-/* Cart Section */
 .cart-container {
     background-color: #f9f9f9;
     padding: 15px;
@@ -40,7 +37,6 @@ h2 {
     color: #555;
 }
 
-/* Form Section */
 .form-group {
     margin-bottom: 15px;
 }

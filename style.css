@@ -1,8 +1,7 @@
-/* General Reset */
-
 *{
     font-family: 'Playfair Display', serif;
 }
+
 body, ul, li {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@ body, ul, li {
     box-sizing: border-box;
 }
 
-/* Navbar */
+
 .navbar {
     background-color: #da8691;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -70,8 +69,6 @@ body, ul, li {
     font-size: 0.8em;
 }
 
-
-/* Footer */
 .footer-container {
     width: 100%;
     height: 300px;
@@ -80,8 +77,6 @@ body, ul, li {
     justify-content: space-evenly;
     flex-direction: row;
 }
-
-
 
 .footer h4 {
     font-size: 1.2rem;
