@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="contact_style.css">
-        <script src="script.js" defer></script>
-        <title>Contact Us</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order_style.css">
+    <script src="script.js" defer></script>
+    <title>Menu</title>
+</head>
 
-    <body>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html">Bakery Logo</a>
-                <ul class="nav-links">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="cart">
-                        <a href="order.html">Cart <span class="cart-count">0</span></a>
-                    </li>
-                </ul>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Bakery Logo</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart">
+                    <a href="order.html">Cart <span class="cart-count">0</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="order-main">
+        <section class="order-section">
+            <h2>Large Desserts</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Lorem Ipsum" data-price="Price">
+                    <img src="img1.png" alt="Product 1">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Price</p>
+                </div>
+                <div class="product-card" data-name="Dolor Sit" data-price="Price">
+                    <img src="img2.png" alt="Product 2">
+                    <h3>Dolor Sit</h3>
+                    <p>Price</p>
+                </div>
+                <div class="product-card" data-name="Amet Consectetur" data-price="Price">
+                    <img src="img3.png" alt="Product 3">
+                    <h3>Amet Consectetur</h3>
+                    <p>Price</p>
+                </div>
+                <div class="product-card" data-name="Adipiscing Elit" data-price="Price">
+                    <img src="img4.png" alt="Product 4">
+                    <h3>Adipiscing Elit</h3>
+                    <p>Price</p>
+                </div>
             </div>
-        </nav>
-    </body>
+        </section>
 
+        <section class="order-section">
+            <h2>Minis</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Nullam Vitae" data-price="Price">
+                    <img src="img5.png" alt="Product 5">
+                    <h3>Nullam Vitae</h3>
+                    <p>Price</p>
+                </div>
+                <div class="product-card" data-name="Pharetra Ligula" data-price="Price">
+                    <img src="img6.png" alt="Product 6">
+                    <h3>Pharetra Ligula</h3>
+                    <p>Price</p>
+                </div>
+                <div class="product-card" data-name="Aliquam Molestie" data-price="Price">
+                    <img src="img7.png" alt="Product 7">
+                    <h3>Aliquam Molestie</h3>
+                    <p>Price</p>
+                </div>
+            </div>
+        </section>
 
+        <section class="order-section">
+            <h2>Drinks</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Faucibus Integer" data-price="Price">
+                    <img src="img8.png" alt="Product 8">
+                    <h3>Faucibus Integer</h3>
+                    <p>Price</p>
+                </div>
+                <div class="product-card" data-name="Suscipit Magna" data-price="Price">
+                    <img src="img9.png" alt="Product 9">
+                    <h3>Suscipit Magna</h3>
+                    <p>Price</p>
+                </div>
+                <div class="product-card" data-name="Venenatis Nisl" data-price="Price">
+                    <img src="img10.png" alt="Product 10">
+                    <h3>Venenatis Nisl</h3>
+                    <p>Price</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer-container">
         <section class="footer">
@@ -47,7 +114,7 @@
               <li><a href="#">Lorem Ipsum</a></li>
               <li><a href="#">Lorem Ipsum</a></li>
           </ul>
-      </section>
+        </section>
 
         <section class="footer">
             <h4>Follow us on social media</h4>
@@ -68,4 +135,5 @@
             </ul>
         </section>
     </footer>
+</body>
 </html>
